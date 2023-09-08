@@ -13,17 +13,21 @@ synadia-server [flags]
 **Options**
 
 ```
-  -c, --config string           NATS configuration file
-  -h, --help                    help for synadia-server
-      --synadia-config string   YAML or JSON config file containing CLI arguments.
-  -t, --token string            Control Plane Token
-  -u, --url string              Control Plane URL
-  -v, --version                 version for synadia-server
+  -c, --config string      NATS configuration file
+  -h, --help               help for synadia-server
+      --opts-file string   YAML or JSON file containing CLI options
+  -t, --token string       Control Plane Token
+  -u, --url string         Control Plane URL
+  -v, --version            version for synadia-server
 ```
 
 ## synadia-server signal
 
-Send signal to synadia-server process (stop, quit, ldm, reopen, reload)
+Send signal to synadia-server
+
+**Synopsis**
+
+Valid signals are: stop, quit, ldm, reopen, reload
 
 ```
 synadia-server signal [flags]
@@ -39,13 +43,17 @@ synadia-server signal [flags]
 **Options inherited from parent commands**
 
 ```
-  -c, --config string           NATS configuration file
-      --synadia-config string   YAML or JSON config file containing CLI arguments.
+  -c, --config string      NATS configuration file
+      --opts-file string   YAML or JSON file containing CLI options
 ```
 
 ## synadia-server validate
 
-Validate Configuration
+Validate NATS Configuration
+
+**Synopsis**
+
+Checks that the NATS Configuration is well-formed and compatible with Control Plane.
 
 ```
 synadia-server validate [flags]
@@ -60,7 +68,7 @@ synadia-server validate [flags]
 **Options inherited from parent commands**
 
 ```
-  -c, --config string           NATS configuration file
-      --synadia-config string   YAML or JSON config file containing CLI arguments.
+  -c, --config string      NATS configuration file
+      --opts-file string   YAML or JSON file containing CLI options
 ```
 
