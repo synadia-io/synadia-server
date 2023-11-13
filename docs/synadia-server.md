@@ -13,12 +13,13 @@ synadia-server [flags]
 **Options**
 
 ```
-  -c, --config string      NATS configuration file
-  -h, --help               help for synadia-server
-      --opts-file string   YAML or JSON file containing CLI options
-  -t, --token string       Control Plane Token
-  -u, --url string         Control Plane URL
-  -v, --version            version for synadia-server
+  -c, --config string          NATS configuration file
+      --disable-file-watcher   Disable File Watcher
+  -h, --help                   help for synadia-server
+      --opts-file string       YAML or JSON file containing CLI options
+  -t, --token string           Control Plane Token
+  -u, --url string             Control Plane URL
+  -v, --version                version for synadia-server
 ```
 
 ## synadia-server signal
